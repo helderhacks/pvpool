@@ -103,3 +103,26 @@ textarea {
     font-size: 16px;
   }
 }
+
+footer {
+  background-color: #f8f9fa;
+  /* Light grey background */
+  color: #6c757d;
+  /* Dark grey text for readability */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8em;
+  /* Smaller text for footer content */
+}
+
+.disclaimer {
+  margin: 0 auto;
+  /* Center the text if the footer is wider than the content */
+  max-width: 90%;
+  /* Ensure readability by not stretching text too wide */
+  line-height: 1.5;
+  /* Improve readability */
+}

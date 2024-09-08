@@ -97,5 +97,8 @@ function parse_csv_data($file_name, $row_limit, $filter) {
       alert("Copied the text: " + copyText.value);
     }
   </script>
+  <footer>
+    <p class="disclaimer">Pokémon and Pokémon GO are trademarks of The Pokémon Company, Niantic, Inc., and Nintendo. All images, names, and related indicia are the property of their respective owners. PokeSift uses these assets for analysis and informational purposes only. PokeSift is not affiliated with, sponsored by, or endorsed by The Pokémon Company, Niantic, Inc., or Nintendo.</p>
+  </footer>
 </body>
 </html>
