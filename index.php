@@ -17,9 +17,9 @@ function parse_csv_data($file_name, $row_limit, $filter) {
   }
 
   $pokedex_entry = array_column($rows, 2);
-  $pokemon_types = array_unique(array_map(function($type1, $type2) {
-    return $type1 . ($type2 !== 'none' ? "&$type2" : "");
-  }, array_column($rows, 3), array_column($rows, 4)));
+  $pokemon_types = array_unique(array_map(function($fast_move, $chr1, $chr2) {
+    return "@1". $fast_move . "&" . "@2" . $chr1 . "&" . "@3" . $chr2;
+  }, array_column($rows, 12), array_column($rows, 13), array_column($rows, 14)));
 
 
   switch ($filter) {
