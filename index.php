@@ -48,6 +48,9 @@ function parse_csv_data($file_name, $row_limit, $filter) {
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <img src="pokesift-logo.png" alt="PokeSift Logo" class="logo">
+  </header>
   <form method="post" onsubmit="this.submit(); return false;">
     <input type="number" name="row_limit" min="1" max="1000" value="<?php echo $_POST['row_limit'] ?>" id="">
     <input type="submit" value="Generate Search String">
