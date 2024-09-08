@@ -18,7 +18,7 @@ function parse_csv_data($file_name, $row_limit, $filter) {
 
   $pokedex_entry = array_column($rows, 2);
   $pokemon_types = array_unique(array_map(function($fast_move, $chr1, $chr2) {
-    return "@". $fast_move . "&" . "@" . $chr1 . "&" . "@" . $chr2;
+    return "@". $fast_move . "," . "@" . $chr1 . "," . "@" . $chr2;
   }, array_column($rows, 11), array_column($rows, 12), array_column($rows, 13)));
 
 
@@ -63,7 +63,7 @@ function parse_csv_data($file_name, $row_limit, $filter) {
     <button  onclick="copyClipboard('dexSearch')">Copy text</button>
   </fieldset>
   <fieldset>
-    <legend>Search String By Typing</legend>
+    <legend>Search String By Moveset (not exclusive)</legend>
     <textarea name="search_string" id="typingSearch">
       <?php echo parse_csv_data($file_name, $row_limit, 'typing'); ?>
     </textarea>
